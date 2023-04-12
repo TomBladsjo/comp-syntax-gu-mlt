@@ -1,0 +1,473 @@
+
+# text = Vilka:<PRON> är:<AUX> de:<PRON> ?:<PUNCT>
+# analyses = 3
+# parsetree = (Utt (Utt (QS (IP Vilka) (cop är) (Comp (NP (Pron de))))) (Punct '?'))
+# weight = 5.0000000000000016e-5
+1	Vilka	_	PRON	_	_	3	nsubj	_	_
+2	är	_	AUX	_	_	3	cop	_	_
+3	de	_	PRON	_	_	0	root	_	_
+4	?	_	PUNCT	_	_	3	punct	_	_
+
+
+
+# text = En:<DET> liten:<ADJ> ort:<NOUN> med:<ADP> två:<NUM> minareter:<NOUN> glider:<VERB> förbi:<ADV> .:<PUNCT>
+# analyses = 23
+# parsetree = (Utt (Utt (S (NP (NP (Det En) (CN (AP (A liten)) (CN (N ort)))) (NP_obl (Prep med) (NP (Num (Card två)) (NP (CN (N minareter)))))) (VP (VP (V glider)) (Adv förbi)))) (Punct '.'))
+# weight = 1.5625000000000007e-11
+1	En	_	DET	_	_	3	det	_	_
+2	liten	_	ADJ	_	_	3	amod	_	_
+3	ort	_	NOUN	_	_	7	nsubj	_	_
+4	med	_	ADP	_	_	6	case	_	_
+5	två	_	NUM	_	_	6	nummod	_	_
+6	minareter	_	NOUN	_	_	3	nmod	_	_
+7	glider	_	VERB	_	_	0	root	_	_
+8	förbi	_	ADV	_	_	7	advmod	_	_
+9	.	_	PUNCT	_	_	7	punct	_	_
+
+
+
+# text = Jag:<PRON> var:<AUX> bara:<ADV> en:<DET> pojke:<NOUN> med:<ADP> leriga:<ADJ> skor:<NOUN> .:<PUNCT>
+# analyses = 21
+# parsetree = (Utt (Utt (QS (IP Jag) (cop var) (neg bara) (Comp (NP (NP (Det en) (CN (N pojke))) (NP_obl (Prep med) (NP (CN (AP (A leriga)) (CN (N skor))))))))) (Punct '.'))
+# weight = 1.2500000000000009e-10
+1	Jag	_	PRON	_	_	5	nsubj	_	_
+2	var	_	AUX	_	_	5	cop	_	_
+3	bara	_	ADV	_	_	5	advmod	_	_
+4	en	_	DET	_	_	5	det	_	_
+5	pojke	_	NOUN	_	_	0	root	_	_
+6	med	_	ADP	_	_	8	case	_	_
+7	leriga	_	ADJ	_	_	8	amod	_	_
+8	skor	_	NOUN	_	_	5	nmod	_	_
+9	.	_	PUNCT	_	_	5	punct	_	_
+
+
+
+# text = Shenzhens:<PROPN> trafikpolis:<NOUN> har:<AUX> valt:<VERB> okonventionella:<ADJ> straff:<NOUN> förut:<ADV> .:<PUNCT>
+# analyses = 8
+# parsetree = (Utt (Utt (S (NP (CN (N (PN Shenzhens) (CN (N trafikpolis))))) (have har) (VP (VP (V2 valt) (NP (CN (AP (A okonventionella)) (CN (N straff))))) (Adv förut)))) (Punct '.'))
+# weight = 3.125000000000002e-10
+1	Shenzhens	_	PROPN	_	_	2	compound	_	_
+2	trafikpolis	_	NOUN	_	_	4	nsubj	_	_
+3	har	_	AUX	_	_	4	aux	_	_
+4	valt	_	VERB	_	_	0	root	_	_
+5	okonventionella	_	ADJ	_	_	6	amod	_	_
+6	straff	_	NOUN	_	_	4	obj	_	_
+7	förut	_	ADV	_	_	4	advmod	_	_
+8	.	_	PUNCT	_	_	4	punct	_	_
+
+
+
+# text = Studiet:<NOUN> av:<ADP> vulkaner:<NOUN> kallas:<VERB> vulkanologi:<NOUN> ,:<PUNCT> ibland:<ADV> stavat:<VERB> vulkanologi:<NOUN> .:<PUNCT>
+# analyses = 2
+# parsetree = (Utt (Utt (S (SC (S_that (S (NP (NP (CN (N Studiet))) (NP_obl (Prep av) (NP (CN (N vulkaner))))) (VP (VP (V2 kallas) (NP (CN (N vulkanologi)))) (comma ',') (Adv ibland))))) (VP (V2 stavat) (NP (CN (N vulkanologi)))))) (Punct '.'))
+# weight = 1.9531250000000018e-13
+1	Studiet	_	NOUN	_	_	4	nsubj	_	_
+2	av	_	ADP	_	_	3	case	_	_
+3	vulkaner	_	NOUN	_	_	1	nmod	_	_
+4	kallas	_	VERB	_	_	8	csubj	_	_
+5	vulkanologi	_	NOUN	_	_	4	obj	_	_
+6	,	_	PUNCT	_	_	4	punct	_	_
+7	ibland	_	ADV	_	_	4	advmod	_	_
+8	stavat	_	VERB	_	_	0	root	_	_
+9	vulkanologi	_	NOUN	_	_	8	obj	_	_
+10	.	_	PUNCT	_	_	8	punct	_	_
+
+
+
+# text = Den:<PRON> genomfördes:<VERB> alldeles:<ADV> utanför:<ADP> den:<DET> mexikanska:<ADJ> kusten:<NOUN> från:<ADP> april:<NOUN> till:<ADP> juni:<NOUN> .:<PUNCT>
+# analyses = 25
+# parsetree = (Utt (Utt (NP (NP (NP (Pron Den)) (VP_pass (VP_pass (V2 genomfördes)) (Adv alldeles))) (NP_obl (Prep utanför) (NP (NP (Det den) (CN (AP (A mexikanska)) (CN (N kusten)))) (NP_obl (Prep från) (NP (NP (CN (N april))) (NP_obl (Prep till) (NP (CN (N juni)))))))))) (Punct '.'))
+# weight = 7.812500000000007e-17
+1	Den	_	PRON	_	_	0	root	_	_
+2	genomfördes	_	VERB	_	_	1	acl	_	_
+3	alldeles	_	ADV	_	_	2	advmod	_	_
+4	utanför	_	ADP	_	_	7	case	_	_
+5	den	_	DET	_	_	7	det	_	_
+6	mexikanska	_	ADJ	_	_	7	amod	_	_
+7	kusten	_	NOUN	_	_	1	nmod	_	_
+8	från	_	ADP	_	_	9	case	_	_
+9	april	_	NOUN	_	_	7	nmod	_	_
+10	till	_	ADP	_	_	11	case	_	_
+11	juni	_	NOUN	_	_	9	nmod	_	_
+12	.	_	PUNCT	_	_	1	punct	_	_
+
+
+
+# text = ":<PUNCT> Hennes:<PRON> röst:<NOUN> gick:<VERB> bokstavligen:<ADV> jorden:<NOUN> runt:<ADP> ,:<PUNCT> ":<PUNCT> sade:<VERB> Leive:<PROPN> .:<PUNCT>
+# analyses = 2
+# parsetree = (Chunks (Utt (Utt (parenth '"') (Utt (QS (IP Hennes) (NP (CN (N röst))) (VPSlash (VP (V2 gick) (NP (Predet bokstavligen) (NP (CN (N jorden))))) (Prep runt)))) (parenth ',')) (Punct '"')) (Utt (Utt (Imp (VP (V2 sade) (NP (PN Leive))))) (Punct '.')))
+# weight = 1.250000000000001e-20
+1	"	_	PUNCT	_	_	4	punct	_	_
+2	Hennes	_	PRON	_	_	4	obj	_	_
+3	röst	_	NOUN	_	_	4	nsubj	_	_
+4	gick	_	VERB	_	_	0	root	_	_
+5	bokstavligen	_	ADV	_	_	6	det:predet	_	_
+6	jorden	_	NOUN	_	_	4	obj	_	_
+7	runt	_	ADP	_	_	4	case	_	_
+8	,	_	PUNCT	_	_	4	punct	_	_
+9	"	_	PUNCT	_	_	4	punct	_	_
+10	sade	_	VERB	_	_	4	dep	_	_
+11	Leive	_	PROPN	_	_	10	obj	_	_
+12	.	_	PUNCT	_	_	10	punct	_	_
+
+
+
+# text = Ett:<DET> vittne:<NOUN> berättade:<VERB> för:<ADP> polisen:<NOUN> att:<SCONJ> offret:<NOUN> hade:<AUX> attackerat:<VERB> den:<DET> mistänkta:<ADJ> i:<ADP> april:<NOUN> .:<PUNCT>
+# analyses = 1023
+# parsetree = (Utt (Utt (S (NP (Det Ett) (CN (N vittne))) (VP (V2 berättade) (NP_obl (Prep för) (NP (NP (NP (CN (N polisen))) (SC (S_that (that att) (S (NP (CN (N offret))) (have hade) (VP (V2C attackerat) (NP (Det den)) (AP (A mistänkta))))))) (NP_obl (Prep i) (NP (CN (N april))))))))) (Punct '.'))
+# weight = 7.812500000000011e-18
+1	Ett	_	DET	_	_	2	det	_	_
+2	vittne	_	NOUN	_	_	3	nsubj	_	_
+3	berättade	_	VERB	_	_	0	root	_	_
+4	för	_	ADP	_	_	5	case	_	_
+5	polisen	_	NOUN	_	_	3	obl	_	_
+6	att	_	SCONJ	_	_	9	mark	_	_
+7	offret	_	NOUN	_	_	9	nsubj	_	_
+8	hade	_	AUX	_	_	9	aux	_	_
+9	attackerat	_	VERB	_	_	5	acl	_	_
+10	den	_	DET	_	_	9	obj	_	_
+11	mistänkta	_	ADJ	_	_	9	xcomp	_	_
+12	i	_	ADP	_	_	13	case	_	_
+13	april	_	NOUN	_	_	5	nmod	_	_
+14	.	_	PUNCT	_	_	3	punct	_	_
+
+
+
+# text = Det:<PRON> är:<AUX> mest:<ADV> uppenbart:<ADJ> när:<SCONJ> en:<DET> känd:<ADJ> persons:<NOUN> namn:<NOUN> är:<AUX> ganska:<ADV> ovanligt:<ADJ> från:<ADP> början:<NOUN> .:<PUNCT>
+# analyses = 43
+# parsetree = (Utt (Utt (S (S (it Det) (cop är) (AdV mest) (AP (A uppenbart))) (S_sub (Subj när) (S (NP (Det en) (CN (AP (A känd)) (CN (N (N_one persons) (N namn))))) (cop är) (AdV ganska) (Comp (AP (AP (A ovanligt)) (NP_obl (Prep från) (NP (CN (N början)))))))))) (Punct '.'))
+# weight = 1.2500000000000013e-16
+1	Det	_	PRON	_	_	4	expl	_	_
+2	är	_	AUX	_	_	4	cop	_	_
+3	mest	_	ADV	_	_	4	advmod	_	_
+4	uppenbart	_	ADJ	_	_	0	root	_	_
+5	när	_	SCONJ	_	_	12	mark	_	_
+6	en	_	DET	_	_	9	det	_	_
+7	känd	_	ADJ	_	_	9	amod	_	_
+8	persons	_	NOUN	_	_	9	compound	_	_
+9	namn	_	NOUN	_	_	12	nsubj	_	_
+10	är	_	AUX	_	_	12	cop	_	_
+11	ganska	_	ADV	_	_	12	advmod	_	_
+12	ovanligt	_	ADJ	_	_	4	advcl	_	_
+13	från	_	ADP	_	_	14	case	_	_
+14	början	_	NOUN	_	_	12	nmod	_	_
+15	.	_	PUNCT	_	_	4	punct	_	_
+
+
+
+# text = Det:<PRON> här:<ADV> har:<AUX> inte:<PART> hindrat:<VERB> investerare:<NOUN> från:<ADP> att:<PART> flockas:<VERB> för:<ADP> att:<PART> sätta:<VERB> in:<ADP> sina:<PRON> pengar:<NOUN> i:<ADP> fonderna:<NOUN> .:<PUNCT>
+# analyses = 7
+# parsetree = (Chunks (ListS (S (NP (Pron Det)) (VP (AdV här) (VP (aux har))))) (SC (VP_to (to inte) (VP (V2 hindrat) (NP (CN (N investerare)))))) (Prep från) (SC (VP_to (to att) (VP (V flockas)))) (Prep för) (SC (VP_to (to att) (VP (V2 sätta) (NP_obl (Prep in) (NP (NP (NP_poss (Pron_poss sina)) (CN (N pengar))) (NP_obl (Prep i) (NP (CN (N fonderna))))))))) (Punct '.'))
+# weight = 3.1250000000000044e-27
+1	Det	_	PRON	_	_	3	nsubj	_	_
+2	här	_	ADV	_	_	3	advmod	_	_
+3	har	_	AUX	_	_	0	root	_	_
+4	inte	_	PART	_	_	5	mark	_	_
+5	hindrat	_	VERB	_	_	3	dep	_	_
+6	investerare	_	NOUN	_	_	5	obj	_	_
+7	från	_	ADP	_	_	3	dep	_	_
+8	att	_	PART	_	_	9	mark	_	_
+9	flockas	_	VERB	_	_	3	dep	_	_
+10	för	_	ADP	_	_	3	dep	_	_
+11	att	_	PART	_	_	12	mark	_	_
+12	sätta	_	VERB	_	_	3	dep	_	_
+13	in	_	ADP	_	_	15	case	_	_
+14	sina	_	PRON	_	_	15	nmod:poss	_	_
+15	pengar	_	NOUN	_	_	12	obl	_	_
+16	i	_	ADP	_	_	17	case	_	_
+17	fonderna	_	NOUN	_	_	15	nmod	_	_
+18	.	_	PUNCT	_	_	3	dep	_	_
+
+
+
+# text = Denna:<DET> motsägelse:<NOUN> mellan:<ADP> ekonomiska:<ADJ> data:<NOUN> och:<CCONJ> politisk:<ADJ> retorik:<NOUN> är:<AUX> välbekant:<ADJ> ,:<PUNCT> eller:<CCONJ> borde:<AUX> vara:<VERB> det:<PRON> .:<PUNCT>
+# analyses = 2
+# parsetree = (Chunks (S_front (S (NP (NP (Det Denna) (CN (N motsägelse))) (NP_obl (Prep mellan) (NP (ListNP (NP (CN (AP (A ekonomiska)) (CN (N data))))) (NP_conj (Conj och) (NP (CN (AP (A politisk)) (CN (N retorik)))))))) (cop är) (Comp (AP (A välbekant)))) (comma ',')) (Utt (Utt (Conj eller) (Utt (Imp (do borde) (VP (V2 vara) (NP (Pron det)))))) (Punct '.')))
+# weight = 1.9531250000000022e-23
+1	Denna	_	DET	_	_	2	det	_	_
+2	motsägelse	_	NOUN	_	_	10	nsubj	_	_
+3	mellan	_	ADP	_	_	5	case	_	_
+4	ekonomiska	_	ADJ	_	_	5	amod	_	_
+5	data	_	NOUN	_	_	2	nmod	_	_
+6	och	_	CCONJ	_	_	8	cc	_	_
+7	politisk	_	ADJ	_	_	8	amod	_	_
+8	retorik	_	NOUN	_	_	5	conj	_	_
+9	är	_	AUX	_	_	10	cop	_	_
+10	välbekant	_	ADJ	_	_	0	root	_	_
+11	,	_	PUNCT	_	_	10	punct	_	_
+12	eller	_	CCONJ	_	_	14	cc	_	_
+13	borde	_	AUX	_	_	14	aux	_	_
+14	vara	_	VERB	_	_	10	dep	_	_
+15	det	_	PRON	_	_	14	obj	_	_
+16	.	_	PUNCT	_	_	14	punct	_	_
+
+
+
+# text = Rimlighetsstudien:<NOUN> uppskattar:<VERB> att:<SCONJ> det:<PRON> skulle:<AUX> ta:<VERB> passagerare:<NOUN> ungefär:<ADV> fyra:<NUM> minuter:<NOUN> att:<PART> korsa:<VERB> Potomacfloden:<PROPN> med:<ADP> gondol:<NOUN> .:<PUNCT>
+# analyses = 2869
+# parsetree = (Utt (Utt (S (NP (CN (N Rimlighetsstudien))) (VP (VS uppskattar) (S_that (that att) (S (NP (Pron det)) (have skulle) (VP (V3 ta) (NP (CN (N passagerare))) (NP (NP (Predet ungefär) (NP (Num (Card fyra)) (NP (NP (CN (N minuter))) (SC (VP_to (to att) (VP (V2 korsa) (NP (PN Potomacfloden)))))))) (NP_obl (Prep med) (NP (CN (N gondol))))))))))) (Punct '.'))
+# weight = 9.76562500000001e-20
+1	Rimlighetsstudien	_	NOUN	_	_	2	nsubj	_	_
+2	uppskattar	_	VERB	_	_	0	root	_	_
+3	att	_	SCONJ	_	_	6	mark	_	_
+4	det	_	PRON	_	_	6	nsubj	_	_
+5	skulle	_	AUX	_	_	6	aux	_	_
+6	ta	_	VERB	_	_	2	ccomp	_	_
+7	passagerare	_	NOUN	_	_	6	iobj	_	_
+8	ungefär	_	ADV	_	_	10	det:predet	_	_
+9	fyra	_	NUM	_	_	10	nummod	_	_
+10	minuter	_	NOUN	_	_	6	obj	_	_
+11	att	_	PART	_	_	12	mark	_	_
+12	korsa	_	VERB	_	_	10	acl	_	_
+13	Potomacfloden	_	PROPN	_	_	12	obj	_	_
+14	med	_	ADP	_	_	15	case	_	_
+15	gondol	_	NOUN	_	_	10	nmod	_	_
+16	.	_	PUNCT	_	_	2	punct	_	_
+
+
+
+# text = han:<PRON> samlade:<VERB> på:<ADP> kort:<NOUN> och:<CCONJ> bytte:<VERB> dem:<PRON> med:<ADP> de:<DET> andra:<ADJ> pojkarna:<NOUN>
+# analyses = 21
+# parsetree = (Utt (QS (IP han) (VP (ListVP (VP (V2 samlade) (NP_obl (Prep på) (NP (CN (N kort)))))) (VP_conj (Conj och) (VP (V2 bytte) (NP (NP (Pron dem)) (NP_obl (Prep med) (NP (Det de) (CN (AP (A andra)) (CN (N pojkarna)))))))))))
+# weight = 1.5625000000000012e-13
+1	han	_	PRON	_	_	2	nsubj	_	_
+2	samlade	_	VERB	_	_	0	root	_	_
+3	på	_	ADP	_	_	4	case	_	_
+4	kort	_	NOUN	_	_	2	obl	_	_
+5	och	_	CCONJ	_	_	6	cc	_	_
+6	bytte	_	VERB	_	_	2	conj	_	_
+7	dem	_	PRON	_	_	6	obj	_	_
+8	med	_	ADP	_	_	11	case	_	_
+9	de	_	DET	_	_	11	det	_	_
+10	andra	_	ADJ	_	_	11	amod	_	_
+11	pojkarna	_	NOUN	_	_	7	nmod	_	_
+
+
+
+# text = det:<DET> här:<ADV> brottet:<NOUN> medför:<VERB> fem:<NUM> års:<NOUN> fängelse:<NOUN>
+# analyses = 31
+# parsetree = (Utt (NP (NP (Det det)) (SC (QS (IAdv här) (NP (CN (N brottet))) (VP (V2 medför) (NP (Num (Card fem)) (NP (CN (N (N_one års) (N fängelse))))))))))
+# weight = 3.1250000000000027e-10
+1	det	_	DET	_	_	0	root	_	_
+2	här	_	ADV	_	_	4	advmod	_	_
+3	brottet	_	NOUN	_	_	4	nsubj	_	_
+4	medför	_	VERB	_	_	1	acl	_	_
+5	fem	_	NUM	_	_	7	nummod	_	_
+6	års	_	NOUN	_	_	7	compound	_	_
+7	fängelse	_	NOUN	_	_	4	obj	_	_
+
+
+
+# text = nyheten:<NOUN> spreds:<VERB> till:<ADP> alla:<DET> byar:<NOUN> i:<ADP> provinsen:<NOUN>
+# analyses = 10
+# parsetree = (Utt (S (NP (CN (N nyheten))) (VP (V2 spreds) (NP_obl (Prep till) (NP (NP (Det alla) (CN (N byar))) (NP_obl (Prep i) (NP (CN (N provinsen)))))))))
+# weight = 3.125000000000002e-9
+1	nyheten	_	NOUN	_	_	2	nsubj	_	_
+2	spreds	_	VERB	_	_	0	root	_	_
+3	till	_	ADP	_	_	5	case	_	_
+4	alla	_	DET	_	_	5	det	_	_
+5	byar	_	NOUN	_	_	2	obl	_	_
+6	i	_	ADP	_	_	7	case	_	_
+7	provinsen	_	NOUN	_	_	5	nmod	_	_
+
+
+
+# text = jag:<PRON> bär:<VERB> med:<ADP> mig:<PRON> de:<DET> här:<ADV> tankarna:<NOUN> i:<ADP> bakhuvudet:<NOUN>
+# analyses = 3
+# parsetree = (Chunks (Comp (NP (NP (NP (Pron jag)) (VP_pass (V2 bär))) (NP_obl (Prep med) (NP (Pron mig))))) (Comp (Comp (NP (Det de))) (Adv här)) (Comp (NP (NP (CN (N tankarna))) (NP_obl (Prep i) (NP (CN (N bakhuvudet)))))))
+# weight = 1.562500000000001e-18
+1	jag	_	PRON	_	_	0	root	_	_
+2	bär	_	VERB	_	_	1	acl	_	_
+3	med	_	ADP	_	_	4	case	_	_
+4	mig	_	PRON	_	_	1	nmod	_	_
+5	de	_	DET	_	_	1	dep	_	_
+6	här	_	ADV	_	_	5	advmod	_	_
+7	tankarna	_	NOUN	_	_	1	dep	_	_
+8	i	_	ADP	_	_	9	case	_	_
+9	bakhuvudet	_	NOUN	_	_	7	nmod	_	_
+
+
+
+# text = Adam:<PROPN> skulle:<AUX> ha:<AUX> förts:<VERB> in:<ADV> i:<ADP> det:<DET> eviga:<ADJ> livet:<NOUN>
+# analyses = 8
+# parsetree = (Utt (S (NP (PN Adam)) (have skulle) (cop ha) (VP_pass (VP_pass (VP_pass (V2 förts)) (Adv in)) (NP_obl (Prep i) (NP (Det det) (CN (AP (A eviga)) (CN (N livet))))))))
+# weight = 2.500000000000002e-10
+1	Adam	_	PROPN	_	_	4	nsubj:pass	_	_
+2	skulle	_	AUX	_	_	4	aux	_	_
+3	ha	_	AUX	_	_	4	aux:pass	_	_
+4	förts	_	VERB	_	_	0	root	_	_
+5	in	_	ADV	_	_	4	advmod	_	_
+6	i	_	ADP	_	_	9	case	_	_
+7	det	_	DET	_	_	9	det	_	_
+8	eviga	_	ADJ	_	_	9	amod	_	_
+9	livet	_	NOUN	_	_	4	nmod	_	_
+
+
+
+# text = höljena:<NOUN> hade:<AUX> ruttnat:<VERB> bort:<ADV> och:<CCONJ> behövde:<AUX> bytas:<VERB> ut:<ADP>
+# analyses = 2
+# parsetree = (Chunks (ListS (S (SC (S_that (S (NP (CN (N höljena))) (have hade) (VP (ListVP (VP (VP (V ruttnat)) (Adv bort))) (VP_conj (Conj och) (VP (aux behövde))))))) (VP (V bytas)))) (Prep ut))
+# weight = 3.125000000000002e-17
+1	höljena	_	NOUN	_	_	3	nsubj	_	_
+2	hade	_	AUX	_	_	3	aux	_	_
+3	ruttnat	_	VERB	_	_	7	csubj	_	_
+4	bort	_	ADV	_	_	3	advmod	_	_
+5	och	_	CCONJ	_	_	6	cc	_	_
+6	behövde	_	AUX	_	_	3	conj	_	_
+7	bytas	_	VERB	_	_	0	root	_	_
+8	ut	_	ADP	_	_	7	dep	_	_
+
+
+
+# text = hon:<PRON> var:<AUX> ursinnig:<ADJ> över:<ADP> att:<SCONJ> den:<DET> här:<ADV> barnungen:<NOUN> till:<ADP> tjej:<NOUN> vågade:<VERB> göra:<VERB> henne:<PRON> till:<ADP> åtlöje:<NOUN> inför:<ADP> klassen:<NOUN>
+# analyses = 3
+# parsetree = (Chunks (ListS (S (NP (Pron hon)) (cop var) (Comp (AP (A ursinnig))))) (Prep över) (QS (if att) (S (NP (NP (Det den)) (SC (S_that (S (NP (NP (Predet här) (NP (CN (N barnungen)))) (NP_obl (Prep till) (NP (CN (N tjej))))) (VP (V vågade)))))) (VP (V2 göra) (NP (NP (Pron henne)) (NP_obl (Prep till) (NP (NP (CN (N åtlöje))) (NP_obl (Prep inför) (NP (CN (N klassen)))))))))))
+# weight = 2.4414062500000038e-26
+1	hon	_	PRON	_	_	3	nsubj	_	_
+2	var	_	AUX	_	_	3	cop	_	_
+3	ursinnig	_	ADJ	_	_	0	root	_	_
+4	över	_	ADP	_	_	3	dep	_	_
+5	att	_	SCONJ	_	_	12	mark	_	_
+6	den	_	DET	_	_	12	nsubj	_	_
+7	här	_	ADV	_	_	8	det:predet	_	_
+8	barnungen	_	NOUN	_	_	11	nsubj	_	_
+9	till	_	ADP	_	_	10	case	_	_
+10	tjej	_	NOUN	_	_	8	nmod	_	_
+11	vågade	_	VERB	_	_	6	acl	_	_
+12	göra	_	VERB	_	_	3	dep	_	_
+13	henne	_	PRON	_	_	12	obj	_	_
+14	till	_	ADP	_	_	15	case	_	_
+15	åtlöje	_	NOUN	_	_	13	nmod	_	_
+16	inför	_	ADP	_	_	17	case	_	_
+17	klassen	_	NOUN	_	_	15	nmod	_	_
+
+
+
+# text = jordskredet:<NOUN> han:<PRON> hade:<VERB> i:<ADP> valkollegiet:<NOUN> dolde:<VERB> knappheten:<NOUN> i:<ADP> en:<DET> seger:<NOUN> baserad:<VERB> på:<ADP> bara:<ADV> 43:<NUM> %:<SYM> av:<ADP> allmänhetens:<NOUN> röster:<NOUN>
+# analyses = 3
+# parsetree = (Chunks (Comp (NP (NP (NP (CN (N jordskredet))) (SC (S_that (S (NP (Pron han)) (VP (V hade)))))) (NP_obl (Prep i) (NP (NP (NP (NP (CN (N valkollegiet))) (VP_pass (V2 dolde))) (SC (S_that (S (NP (NP (CN (N knappheten))) (NP_obl (Prep i) (NP (Det en) (CN (N seger))))) (VP (V baserad)))))) (NP_obl (Prep på) (NP (Predet bara) (NP (Num (Card '43'))))))))) (Symb '%') (Comp (NP_obl (Prep av) (NP (CN (N (N_one allmänhetens) (N röster)))))))
+# weight = 1.525878906250002e-30
+1	jordskredet	_	NOUN	_	_	0	root	_	_
+2	han	_	PRON	_	_	3	nsubj	_	_
+3	hade	_	VERB	_	_	1	acl	_	_
+4	i	_	ADP	_	_	5	case	_	_
+5	valkollegiet	_	NOUN	_	_	1	nmod	_	_
+6	dolde	_	VERB	_	_	5	acl	_	_
+7	knappheten	_	NOUN	_	_	11	nsubj	_	_
+8	i	_	ADP	_	_	10	case	_	_
+9	en	_	DET	_	_	10	det	_	_
+10	seger	_	NOUN	_	_	7	nmod	_	_
+11	baserad	_	VERB	_	_	5	acl	_	_
+12	på	_	ADP	_	_	14	case	_	_
+13	bara	_	ADV	_	_	14	det:predet	_	_
+14	43	_	NUM	_	_	5	nmod	_	_
+15	%	_	SYM	_	_	1	dep	_	_
+16	av	_	ADP	_	_	18	case	_	_
+17	allmänhetens	_	NOUN	_	_	18	compound	_	_
+18	röster	_	NOUN	_	_	1	dep	_	_
+
+
+
+# text = Förenta:<PROPN> Staternas:<PROPN> trupper:<NOUN> bär:<VERB> nu:<ADV> atropin:<NOUN> och:<CCONJ> autoinjektorer:<NOUN> i:<ADP> sina:<PRON> förbandslådor:<NOUN> att:<SCONJ> använda:<VERB> i:<ADP> fall:<NOUN> av:<ADP> nervgiftsförgiftning:<NOUN> med:<ADP> organofosfat:<NOUN>
+# analyses = 10169
+# parsetree = (Utt (S (NP (CN (N (PN Förenta) (CN (N (PN Staternas) (CN (N trupper))))))) (VP (V2 bär) (NP (NP (Predet nu) (NP (ListNP (NP (CN (N atropin)))) (NP_conj (Conj och) (NP (CN (N autoinjektorer)))))) (NP_obl (Prep i) (NP (NP (NP (NP_poss (Pron_poss sina)) (CN (N förbandslådor))) (S_sub (Subj att) (VP (V använda)))) (NP_obl (Prep i) (NP (NP (CN (N fall))) (NP_obl (Prep av) (NP (NP (CN (N nervgiftsförgiftning))) (NP_obl (Prep med) (NP (CN (N organofosfat))))))))))))))
+# weight = 7.629394531250011e-26
+1	Förenta	_	PROPN	_	_	3	compound	_	_
+2	Staternas	_	PROPN	_	_	3	compound	_	_
+3	trupper	_	NOUN	_	_	4	nsubj	_	_
+4	bär	_	VERB	_	_	0	root	_	_
+5	nu	_	ADV	_	_	6	det:predet	_	_
+6	atropin	_	NOUN	_	_	4	obj	_	_
+7	och	_	CCONJ	_	_	8	cc	_	_
+8	autoinjektorer	_	NOUN	_	_	6	conj	_	_
+9	i	_	ADP	_	_	11	case	_	_
+10	sina	_	PRON	_	_	11	nmod:poss	_	_
+11	förbandslådor	_	NOUN	_	_	6	nmod	_	_
+12	att	_	SCONJ	_	_	13	mark	_	_
+13	använda	_	VERB	_	_	11	acl	_	_
+14	i	_	ADP	_	_	15	case	_	_
+15	fall	_	NOUN	_	_	11	nmod	_	_
+16	av	_	ADP	_	_	17	case	_	_
+17	nervgiftsförgiftning	_	NOUN	_	_	15	nmod	_	_
+18	med	_	ADP	_	_	19	case	_	_
+19	organofosfat	_	NOUN	_	_	17	nmod	_	_
+
+
+
+# text = han:<PRON> skulle:<AUX> kunna:<AUX> åstadkomma:<VERB> med:<ADP> list:<ADJ> på:<ADP> lång:<ADJ> sikt:<NOUN> vad:<PRON> han:<PRON> inte:<PART> kan:<AUX> göra:<VERB> med:<ADP> tvång:<NOUN> och:<CCONJ> våld:<NOUN> på:<ADP> kort:<ADJ>
+# analyses = 3
+# parsetree = (Chunks (ListS (S (NP (Pron han)) (aux skulle) (have kunna) (VP (V2 åstadkomma) (NP_obl (Prep med) (NP (ListNP (NP (CN (AP (AP (A list)) (NP_obl (Prep på) (NP (NP (CN (AP (A lång)) (CN (N sikt)))) (SC (QS (IP vad) (NP (NP (Pron han)) (SC (VP_to (to inte) (VP (aux kan))))) (VPSlash (VP (V göra)) (Prep med))))))) (CN (N tvång))))) (NP_conj (Conj och) (NP (CN (N våld))))))))) (Prep på) (A kort))
+# weight = 3.906250000000006e-33
+1	han	_	PRON	_	_	4	nsubj	_	_
+2	skulle	_	AUX	_	_	4	aux	_	_
+3	kunna	_	AUX	_	_	4	aux	_	_
+4	åstadkomma	_	VERB	_	_	0	root	_	_
+5	med	_	ADP	_	_	16	case	_	_
+6	list	_	ADJ	_	_	16	amod	_	_
+7	på	_	ADP	_	_	9	case	_	_
+8	lång	_	ADJ	_	_	9	amod	_	_
+9	sikt	_	NOUN	_	_	6	nmod	_	_
+10	vad	_	PRON	_	_	14	obj	_	_
+11	han	_	PRON	_	_	14	nsubj	_	_
+12	inte	_	PART	_	_	13	mark	_	_
+13	kan	_	AUX	_	_	11	acl	_	_
+14	göra	_	VERB	_	_	9	acl	_	_
+15	med	_	ADP	_	_	14	case	_	_
+16	tvång	_	NOUN	_	_	4	obl	_	_
+17	och	_	CCONJ	_	_	18	cc	_	_
+18	våld	_	NOUN	_	_	16	conj	_	_
+19	på	_	ADP	_	_	4	dep	_	_
+20	kort	_	ADJ	_	_	4	dep	_	_
+
+
+
+# text = det:<PRON> har:<AUX> påståtts:<VERB> att:<SCONJ> bara:<ADV> ett:<DET> hierarkiskt:<ADJ> samhälle:<NOUN> med:<ADP> en:<DET> överklass:<NOUN> med:<ADP> fritid:<NOUN> kan:<AUX> producera:<VERB> konst:<NOUN>
+# analyses = 819
+# parsetree = (Utt (S (NP (Pron det)) (have har) (VP (VS påståtts) (S_that (that att) (S (NP (NP (Predet bara) (NP (Det ett) (CN (AP (A hierarkiskt)) (CN (N samhälle))))) (NP_obl (Prep med) (NP (NP (Det en)) (SC (S_that (S (NP (NP (CN (N överklass))) (NP_obl (Prep med) (NP (CN (N fritid))))) (VP (aux kan)))))))) (VP (V2 producera) (NP (CN (N konst)))))))))
+# weight = 9.765625000000014e-24
+1	det	_	PRON	_	_	3	nsubj	_	_
+2	har	_	AUX	_	_	3	aux	_	_
+3	påståtts	_	VERB	_	_	0	root	_	_
+4	att	_	SCONJ	_	_	15	mark	_	_
+5	bara	_	ADV	_	_	8	det:predet	_	_
+6	ett	_	DET	_	_	8	det	_	_
+7	hierarkiskt	_	ADJ	_	_	8	amod	_	_
+8	samhälle	_	NOUN	_	_	15	nsubj	_	_
+9	med	_	ADP	_	_	10	case	_	_
+10	en	_	DET	_	_	8	nmod	_	_
+11	överklass	_	NOUN	_	_	14	nsubj	_	_
+12	med	_	ADP	_	_	13	case	_	_
+13	fritid	_	NOUN	_	_	11	nmod	_	_
+14	kan	_	AUX	_	_	10	acl	_	_
+15	producera	_	VERB	_	_	3	ccomp	_	_
+16	konst	_	NOUN	_	_	15	obj	_	_
+
+
+
+# text = hans:<PRON> fyndiga:<ADJ> förklaring:<NOUN> att:<SCONJ> han:<PRON> inte:<PART> skulle:<AUX> ha:<AUX> bränt:<VERB> kyrkan:<NOUN> om:<SCONJ> han:<PRON> inte:<PART> hade:<AUX> trott:<VERB> att:<SCONJ> biskopen:<NOUN> var:<AUX> där:<ADV> inne:<ADV>
+# analyses = 6278
+# parsetree = (Utt (S (NP (NP (NP_poss (Pron_poss hans)) (CN (AP (A fyndiga)) (CN (N förklaring)))) (SC (S_that (that att) (S (NP (NP (Pron han)) (SC (VP_to (to inte) (VP (aux skulle))))) (VP (aux ha)))))) (VP (V2 bränt) (NP (NP (CN (N kyrkan))) (SC (S_that (that om) (S (NP (NP (Pron han)) (SC (VP_to (to inte) (VP (aux hade))))) (VP (VS trott) (S_that (that att) (S (NP (CN (N biskopen))) (VP (VP (VP (aux var)) (Adv där)) (Adv inne))))))))))))
+# weight = 1.2207031250000016e-36
+1	hans	_	PRON	_	_	3	nmod:poss	_	_
+2	fyndiga	_	ADJ	_	_	3	amod	_	_
+3	förklaring	_	NOUN	_	_	9	nsubj	_	_
+4	att	_	SCONJ	_	_	8	mark	_	_
+5	han	_	PRON	_	_	8	nsubj	_	_
+6	inte	_	PART	_	_	7	mark	_	_
+7	skulle	_	AUX	_	_	5	acl	_	_
+8	ha	_	AUX	_	_	3	acl	_	_
+9	bränt	_	VERB	_	_	0	root	_	_
+10	kyrkan	_	NOUN	_	_	9	obj	_	_
+11	om	_	SCONJ	_	_	15	mark	_	_
+12	han	_	PRON	_	_	15	nsubj	_	_
+13	inte	_	PART	_	_	14	mark	_	_
+14	hade	_	AUX	_	_	12	acl	_	_
+15	trott	_	VERB	_	_	10	acl	_	_
+16	att	_	SCONJ	_	_	18	mark	_	_
+17	biskopen	_	NOUN	_	_	18	nsubj	_	_
+18	var	_	AUX	_	_	15	ccomp	_	_
+19	där	_	ADV	_	_	18	advmod	_	_
+20	inne	_	ADV	_	_	18	advmod	_	_
+
+
+
