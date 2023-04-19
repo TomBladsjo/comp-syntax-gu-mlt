@@ -265,43 +265,37 @@ ListNP_obl ::= ListNP_obl Adv_comma # head conj
 #pos SYM Symb
 
 -- structural word lexicon: normal categories
-#token Prep at from in of on to with than
-#token IP who whom what
-#token IAdv when where why
-#token AdA very too genetically
-#token AdV definitely always never
-#token Det a an the every some many no
-#token Pron I me you he him she her it we us they them
-#token Subj if when although because as
-#token aux can could must will would shall should
+#token IP vem vad
+#token IAdv när hur var varför
+#token AdA mycket för
+#token AdV alltid aldrig
+#token Det en ett den det varje någon något några ingen inget inga alla
+#token Pron jag mig du dig han honom hon henne hen henom vi oss ni er de dem dom
+#token Subj om när eftersom
+#token aux kan kunde måste vill ville ska skall skulle
 #token Punct . ! ?
 #token Punct_appos , :
-#token Conj and or nor
-#token Conj_pre both either neither
-#token IDet which
-#token Pron_poss my your his her its our their
-#token RP that who
-#token Card five
+#token Conj och eller
+#token Conj_pre både antingen varken
+#token IDet vilken vilket vilka
+#token Pron_poss min mitt mina din ditt dina hans hennes hens vår vårt våra er ert era deras sin sitt sina
+#token RP som
 
 -- structural word lexicon: syncategorematic words
-#token cop am is are was were be been being
-#token be_V is are was were be been being
-#token do do does did
-#token have have has had
-#token neg not n't
-#token that that
-#token to to
-#token it it
-#token if if whether
-#token there there
+#token Prep_prt av bort ner till upp ut
+#token cop är var varit vara
+#token be_V är var varit vara
+#token have ha har hade
+#token finnas finns fanns funnits finnas
+#token neg inte
+#token that att
+#token to att
+#token it det
+#token if om huruvida
+#token som som
 #token comma ,
 #token colon :
 #token quote "
-#token 's 's
 #token parenth ( ) [ ]
-
-
-
-
 
 
